@@ -26,6 +26,7 @@
           document.body.appendChild(z);
           function doWork() {
             script = document.createElement("script");
+            script.setAttribute('type', "text/javascript");
             script.addEventListener("load", function () {
               window.instgrm = z.contentWindow.instgrm;
               window.instgrm.Embeds.process();
