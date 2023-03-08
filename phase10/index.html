@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style2023.min.css">
+    <script src="./js/bundle2023.min.js"></script>
+    <title>Document</title>
+    <script>
+        let names = {
+            "standard":0,
+            "Twist Phases":1,
+            "Island Paradise":2,
+            "Cocoa Canyon":3,
+            "Disco Fever":4,
+            "Cupcake Lounge":5,
+            "Candy Castle":6,
+            "Prehistoric Valley":7,
+            "Moonlight Drive-In":8,
+            "Ancient Greece":9,
+            "Jazz Club":10,
+            "Vintage Gas Station":11,
+            "Ocean Reef":12,
+            "Southwest":13,
+            "Okie Circle J":14
+        }
+        let _phases = [
+            ["AAA + BBB", "AAA + ABCD", "AAAA + ABCD", "ABCDEFG", "ABCDEFGH", "ABCDEFGHI", "AAAA + BBBB", "3333333", "AAAAA + BB", "AAAAA + BBB" ],
+            ["AAA + BBB + CCC", "AA + BB + CC + DD", "ABCDEF + AA", "AAAAA + ABCD", "AAA + ABCDEF", "AAAA+BBBB", "AAAA + 3333", "abcde", "33333333", "333333333" ],
+            ["ABCDEFG", "AA + BBB + CCC", "ABCDEF + AA", "AA + BB + CC + DDDD", "AAA + ABCDEF", "AAAA + BBBB", "333 + AAAA", "33333333", "333 + ABCDE", "333333333" ],
+            ["333333", "3333333", "3333 + 33333", "AAA + BBB", "ABCDEFGH", "ABCDEFGHI", "AAAA + ABCD", "0000000000", "AAAA + ABCDEF", "AAAAA + ABCD" ],
+            ["00000000", "000000000", "abc + AA + BB", "3333333", "abcde + AA + BB", "OOO + OOOO", "abcd + AAAA", "abcd + AA + BB + CC", "ABC + AAA + BBB", "ABC + AAAA + BBB" ],
+            ["333 + 333 + 3333", "333 + AA + BB", "3333333", "AAA + BBB", "AAAA + BB + CC", "AAAAA", "OOOO + OOOO", "ABCDEFGHI", "abcde + AA + BB", "abcdef + AA" ],
+            ["ABC + AA + BB + CC", "ABCDEFGH", "ABCDEFGHI", "abc + AAA", "AA + BBB + CCC", "AA + BBB + CCCC", "3333 + 333333", "33333 + 33333", "ABCDE + AAA + BB", "ABC + AAAA + BBB" ],
+            ["000000000", "0000000000", "ABCDEFGH", "ABCDEFGHIJ", "AAA + BBB", "AAAA + BBBB", "abcd", "abc + 333", "AAA + ABCD", "AAAA + ABCDEF" ],
+            ["AAAA + BB", "AAA + BBB", "ABCDEFG", "ABCDEFGH", "AA + BBB + CCC", "AAAAA", "ABCDEFGHI", "ABCDEF + AA + BB", "ABCDEFGH + AA", "AAAA + ABCDEF" ],
+            ["AA + ABCDEF", "000000000", "0000000000", "abc + AAA", "AAA + ABCDEF", "ABCDE + AAAA", "abcde", "OOO + OOOO", "AA + BB + CC + DD + EE", "AAA + BBB + CC + DD" ],
+            ["00000000", "abc + AAA", "000000000", "abcd", "0000000000", "abcde", "OOOOO", "abcde + AA", "OOOOOO", "abcde + 333" ],
+            ["AAA + ABCDE", "ABCD + AAA + BB", "ABC + AAA + BB + CC", "abcd", "abcd + AA", "abcd + AA + BB", "AAAAA + ABCD", "OOOOO", "OOOOOO", "abc + 333 + AA" ],
+            ["ABCDEFG", "AAAA + BBB", "abcde + AA", "0000000000", "ABCDE + ABCDE", "AAA + BBB + CCC", "abcd + AAA", "OOO + OOOO", "ABCDEFG + AA", "abcde + AAA" ],
+            ["AA + ABCDEF", "000000000", "0000000000", "abc + AAA", "AAA + ABCDE", "AAAAA + ABCD", "abcde", "OOO + OOOOO", "AA + BB + CC + DD + EE", "AAA + BBB + CC + DD" ],
+            ["AA + BB + CC + DD + EE", "abcdefghij", "AAAA + abcd", "0000000000", "ABC + AAA + BB + CC", "ABCDEFGH", "AAAAA + ABCDE", "abcdefgh", "OOOOOOOO + AA", "aa + bb + CC + W + abc" ],
+        ]
+            //["", "", "", "", "", "", "", "", "", "" ],
+    </script>
+
+</head>
+<body>
+<!--    <phase-card items='["AAA + BBB", "AAA + ABCD", "AAAA + ABCD", "ABCDEFG", "ABCDEFGH", "ABCDEFGHI", "AAAA + BBBB", "0000000", "AAAAA + BB", "AAAAA + BBB" ]'></phase-card> -->
+</body>
+    <script>
+        let card = document.createElement("phase-card");
+        card.setAttribute("items", JSON.stringify( _phases[parseInt(Math.random()*_phases.length)] ));
+        document.body.appendChild(card);
+    </script>
+</html>
