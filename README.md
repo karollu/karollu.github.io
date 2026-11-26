@@ -1,2 +1,3 @@
-# devop_log
-My HTML/CSS/JS solutions.
+# karollu.github.io
+
+Production build of personal micro-apps.
